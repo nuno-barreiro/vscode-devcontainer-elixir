@@ -1,0 +1,24 @@
+# devcontainer.json
+{
+    "name": "Elixir Programming Env",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": {}
+    },
+    "settings": {
+        "workbench.colorTheme": "Monokai",
+        "terminal.integrated.shell.linux": "/bin/zsh",
+      },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "vscode.theme-monokai",
+                "vscode-icons-team.vscode-icons",
+                "JakeBecker.elixir-ls"
+            ]
+        }
+    },
+    "containerEnv": {},
+    "forwardPorts": [],
+    "postCreateCommand": "zsh"
+}
